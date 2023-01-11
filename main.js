@@ -37,11 +37,14 @@ function createWindow () {
 
   // and load the index.html of the app.
   // mainWindow.loadFile('./dist/index.html')
-  mainWindow.loadURL('https://yangzhiyuan.top')
-  // mainWindow.loadURL('https://www.baidu.com')
+  // mainWindow.loadURL('https://yangzhiyuan.top')
+  mainWindow.loadURL('https://www.baidu.com')
   
   const contents = mainWindow.webContents
   console.log(contents)
+  
+  const homeDir = path.dirname(app.getPath('exe')) 
+  alert(homeDir)
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()

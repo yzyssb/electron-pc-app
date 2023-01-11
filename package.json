@@ -28,7 +28,6 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^19.0.5",
-    "electron-builder": "^23.1.0",
     "electron-reloader": "^1.2.3"
   },
   "dependencies": {
@@ -38,8 +37,6 @@
   "scripts": {
     "start": "electron .",
     "packager": "electron-packager . 百度 --out fukaiitapp --arch=x64 --icon=D:\\新建文件夹\\electron-quick-start\\build\\icons\\icon.ico --overwrite --ignore=node_modules",
-    "electron:generate-icons": "electron-icon-builder --input=./girl.png --output=build --flatten",
-	"dist": "electron-builder",
-	"dist-win": "electron-builder --win --ia32"
+    "electron:generate-icons": "electron-icon-builder --input=./girl.png --output=build --flatten"
   }
 }
